@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
-  constructor() { }
+  TitApp: string ;
+  Lista: string[] = ['advpl', 'atusx', 'Romeno', 'Bucareste']; // Declaracao de array
+
+  constructor() {
+    this.TitApp = 're-training' ;
+  }
 
   ngOnInit() {
   }
