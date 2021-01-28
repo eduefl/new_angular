@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CursosService } from './cursos.service';
 
 @Component({
   selector: 'app-cursos',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class CursosComponent implements OnInit {
 
   TitApp: string ;
-  Lista: string[] = ['advpl', 'atusx', 'Romeno', 'Bucareste']; // Declaracao de array
+  Lista: string[] = []; // Declaracao de array
 
-  constructor() {
+  constructor(private sCursosService: CursosService) {
     this.TitApp = 're-training' ;
+
+    this.Lista =  this.sCursosService.getCursos() ;
+
+    // let servico = new CursosService() ; modelo de instanciamento manual (nao usar)
   }
 
   ngOnInit() {
