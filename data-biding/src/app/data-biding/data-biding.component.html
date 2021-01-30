@@ -1,0 +1,29 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolatio\interpolacao</h3>
+    <p>
+      String reinderizada com interpolacao {{ cUrl }}
+    </p>
+
+    <p>
+      O resultado de 1+1 e {{ 1 + 1  }}
+    </p>
+    <p>
+      O resultado de 1+1 nao  e {{ 1 + 1 + getValor() }}
+    </p>
+
+    <p>
+      a analize logica e  {{ lVarLog && getBoolean() }}
+    </p>
+
+  </article>
+
+  <article>
+    <img src=" {{ teste }}" > <!-- Este é um comentário -->// does not work anymore
+    <img [src]=" cImage2  " alt="Exemplo usando property biding"> <!-- porperty biding -->
+
+    <img bind-src="cImage1" > <!-- Tambem property biding  -->
+
+  </article>
+
+</section>
