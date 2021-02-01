@@ -1,0 +1,71 @@
+<h1>
+  Class Biden
+</h1>
+
+<section>
+  <article>
+    <div>
+      Selecione Uma Classe
+      <select #ValorSelec (change)="(0)">
+        <!-- assim se declara uma variavel de template '#valor select-- tambem aqui e declarado o evento> <!-->
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Aviso</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Interpolacao-->
+
+    <div class="alert {{ ValorSelec.value }}" role="alert">
+      Texto colorido conforme o bombobox
+    </div>
+
+    <!--property baiden pra estilo-->
+
+
+    <div
+      class="alert"
+      role="alert"
+      [class.alert-danger]="ValorSelec.value == 'alert-danger'"
+      [style.display] = "ValorSelec.value == 'alert-danger' ? 'block' : 'none'"
+    >
+      Esse texto so aparecce ao selecionar o erro
+    </div>
+
+
+    <!--Class biden-->
+
+    <div
+      class="alert"
+      role="alert"
+      [class.alert-success]="ValorSelec.value == 'alert-success'"
+    >
+      Sucesso
+    </div>
+    <div
+      class="alert"
+      role="alert"
+      [class.alert-info]="ValorSelec.value == 'alert-info'"
+    >
+      Info
+    </div>
+    <div
+      class="alert"
+      role="alert"
+      [class.alert-warning]="ValorSelec.value == 'alert-warning'"
+    >
+      Aviso
+    </div>
+    <div
+      class="alert"
+      role="alert"
+      [class.alert-danger]="ValorSelec.value == 'alert-danger'"
+    >
+      Erro
+    </div>
+  </article>
+</section>
