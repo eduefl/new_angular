@@ -1,0 +1,32 @@
+<h1>
+  Event Baiden
+</h1>
+<!--https://developer.mozilla.org/en-us/docs/Web/Events-->
+
+<section>
+  <article >
+    <div >
+      <button (mouseleave) = "saiu($event)" (mouseup)="sobemouse($event)" (mousedown)="baixamouse($event)" (click)="clickDuButao($event)"  (mousemove)="movemouse($event)" type="button" class="btn btn-primary" style="background-color : #00CED1" >Butao </button>
+      <br>
+      <br>
+      <input
+        type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter) = "onSalvaValor(campoInput.value)"
+        (blur)= "onSalvaValor(campoInput.value)"
+        #campoInput
+      >
+      <p>o valor atual e:  {{ cValorAtual }} </p>
+      <p>o valor salvo e:  {{ cValorSalvo }} </p>
+
+      <span
+        (mouseover)= "onToBeOrNotToBe()"
+        (mouseout)= "onToBeOrNotToBe()"
+        [class.taOn] = "lPaiTaOn"
+      >Passe o maouse sobre min:</span>
+
+
+    </div>
+  </article>
+</section>
+

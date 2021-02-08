@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
 import { ClassBidenComponent } from './class-biden/class-biden.component';
+import { EventBidenComponent } from './event-biden/event-biden.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBidingComponent,
-    ClassBidenComponent
+    ClassBidenComponent,
+    EventBidenComponent
   ],
   imports: [
     BrowserModule,
