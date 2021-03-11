@@ -1,0 +1,45 @@
+<section style="background-color: red">
+  <article>
+    <h1>2 way data baiden</h1>
+    <div>
+      <input
+        type="text"
+        [value]="nome"
+        name=""
+        id="1"
+        (input)="nome = $event.target.value"
+      />
+      <br>
+      <br>
+      <input
+        type="text"
+        [ngModel]="nome"
+        name=""
+        id="1"
+        (ngModelChange)="nome = $event"
+      />
+      <br>
+      <br>
+      <!-- Forma Usual the two way data baiden-->
+      <input
+        type="text"
+        [(ngModel)]="nome"
+      />
+      <!-- Forma Canonica the two way data baiden-->
+      <br>
+      <br>
+      <input
+        type="text"
+        bindon-ngModel="nome"
+      />
+
+      <p>VOce digitou o nome : {{ nome }}</p>
+    </div>
+    <div style="background-color:violet">
+      <input type="text" [(ngModel)]="pessoa.nome" >
+      <br>
+      <input type="text" [(ngModel)]="pessoa.idade" >
+      <p> Meu nome e {{ pessoa.nome }} e tenho {{pessoa.idade}} </p>
+    </div>
+  </article>
+</section>
