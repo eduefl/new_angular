@@ -9,6 +9,8 @@ import { EventBidenComponent } from './event-biden/event-biden.component';
 import { TwoWayDataBaidenComponent } from './two-way-data-baiden/two-way-data-baiden.component';
 import { FormsModule } from '@angular/forms';
 import { MeuFormModule } from './meu-form/meu-form.module';
+import { ImputPropertPaiComponent } from './imput-propert-pai/imput-propert-pai.component';
+import { ImputPropertFilhoComponent } from './imput-propert-filho/imput-propert-filho.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MeuFormModule } from './meu-form/meu-form.module';
     DataBidingComponent,
     ClassBidenComponent,
     EventBidenComponent,
-    TwoWayDataBaidenComponent
+    TwoWayDataBaidenComponent,
+    ImputPropertPaiComponent,
+    ImputPropertFilhoComponent
   ],
   imports: [
     BrowserModule,
