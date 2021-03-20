@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MeuFormModule } from './meu-form/meu-form.module';
 import { ImputPropertPaiComponent } from './imput-propert-pai/imput-propert-pai.component';
 import { ImputPropertFilhoComponent } from './imput-propert-filho/imput-propert-filho.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ImputPropertFilhoComponent } from './imput-propert-filho/imput-propert-
     EventBidenComponent,
     TwoWayDataBaidenComponent,
     ImputPropertPaiComponent,
-    ImputPropertFilhoComponent
+    ImputPropertFilhoComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
