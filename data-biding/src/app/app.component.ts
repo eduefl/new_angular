@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  valorInicial = 15
   title = 'data-biding';
+  onMudouValor(evento)
+  {
+    console.log(evento.novoValor);
+
+  }
 }
