@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   valorInicial = 15
   title = 'data-biding';
+  deletarCiclo = false;
+  obliterar()
+  {
+    this.deletarCiclo = true;
+
+  }
+  mudaValor()
+  {
+    this.valorInicial++;
+
+  }
+
   onMudouValor(evento)
   {
     console.log(evento.novoValor);

@@ -12,6 +12,7 @@ import { MeuFormModule } from './meu-form/meu-form.module';
 import { ImputPropertPaiComponent } from './imput-propert-pai/imput-propert-pai.component';
 import { ImputPropertFilhoComponent } from './imput-propert-filho/imput-propert-filho.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     TwoWayDataBaidenComponent,
     ImputPropertPaiComponent,
     ImputPropertFilhoComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,
