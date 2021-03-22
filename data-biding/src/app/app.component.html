@@ -1,3 +1,5 @@
+<app-access-dom [valor] = "valorInicial"
+(mudouValor) = "onMudouValor($event)"></app-access-dom>
 <app-ciclo [capitalInicial] = "valorInicial" *ngIf="!deletarCiclo"  ></app-ciclo>
 <button (click)="mudaValor()" > mudar valor</button>
 <button (click)="obliterar()" > obliterar</button>

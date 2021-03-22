@@ -13,6 +13,7 @@ import { ImputPropertPaiComponent } from './imput-propert-pai/imput-propert-pai.
 import { ImputPropertFilhoComponent } from './imput-propert-filho/imput-propert-filho.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { AccessDomComponent } from './access-dom/access-dom.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CicloComponent } from './ciclo/ciclo.component';
     ImputPropertPaiComponent,
     ImputPropertFilhoComponent,
     OutputPropertyComponent,
-    CicloComponent
+    CicloComponent,
+    AccessDomComponent
   ],
   imports: [
     BrowserModule,
